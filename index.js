@@ -129,7 +129,18 @@ console.log(isMenuItemInCategory(menu[1], "Salad"));
 
 function addMenuItem(menu, menuItem) {
   // Your code here
+  menu.push(menuItem);
+  return menu;
 }
+console.log(
+  addMenuItem(menu, {
+    id: 306,
+    name: "Pizza",
+    category: "Main Course",
+    price: 14.99,
+    ingredients: ["Dough", "Tomato Sauce", "Mozzarella", "Pepperoni"],
+  })
+);
 
 // const newMenuItem = {
 //   id: 306,
