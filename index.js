@@ -170,7 +170,9 @@ function countMainCourseItems(menu) {
       return false;
     }
   });
+  return result.length;
 }
+
 console.log(countMainCourseItems(menu));
 
 /**********
