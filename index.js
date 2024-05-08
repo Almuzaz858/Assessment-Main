@@ -187,8 +187,11 @@ console.log(countMainCourseItems(menu));
 
 function listMenuItemNamesByCategory(menu, category) {
   // Your code here
+  const NamesByCategory = menu.map((menu) => menu.category).flat();
+  return [...new Set(NamesByCategory)];
 }
-// console.log(listMenuItemNamesByCategory(menu, "Main Course"));
+
+console.log(listMenuItemNamesByCategory(menu, "Main Course"));
 
 /**********
   Question 6: 🌶️🌶️
