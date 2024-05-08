@@ -132,25 +132,25 @@ function addMenuItem(menu, menuItem) {
   menu.push(menuItem);
   return menu;
 }
-console.log(
-  addMenuItem(menu, {
-    id: 306,
-    name: "Pizza",
-    category: "Main Course",
-    price: 14.99,
-    ingredients: ["Dough", "Tomato Sauce", "Mozzarella", "Pepperoni"],
-  })
-);
+// console.log(
+//   addMenuItem(menu, {
+//     id: 306,
+//     name: "Pizza",
+//     category: "Main Course",
+//     price: 14.99,
+//     ingredients: ["Dough", "Tomato Sauce", "Mozzarella", "Pepperoni"],
+//   })
+// );
 
-// const newMenuItem = {
-//   id: 306,
-//   name: "Pizza",
-//   category: "Main Course",
-//   price: 14.99,
-//   ingredients: ["Dough", "Tomato Sauce", "Mozzarella", "Pepperoni"],
-// };
+const newMenuItem = {
+  id: 306,
+  name: "Pizza",
+  category: "Main Course",
+  price: 14.99,
+  ingredients: ["Dough", "Tomato Sauce", "Mozzarella", "Pepperoni"],
+};
 
-// console.log(addMenuItem(menu, newMenuItem));
+console.log(addMenuItem(menu, newMenuItem));
 
 /**********
     Question 4:
@@ -163,8 +163,15 @@ console.log(
 
 function countMainCourseItems(menu) {
   // Your code here
+  const result = menu.filter((menu) => {
+    if (menu.category == "Main Course") {
+      return true;
+    } else {
+      return false;
+    }
+  });
 }
-// console.log(countMainCourseItems(menu));
+console.log(countMainCourseItems(menu));
 
 /**********
     Question 5: 🌶️
